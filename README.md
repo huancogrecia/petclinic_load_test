@@ -9,3 +9,7 @@
 #### - mvn test -P dev  --> aplication-dev.properties
 #### - mvn test -P test --> aplication-test.properties
 #### - mvn test -P prod --> aplication-prod.properties
+
+#### - mvn clean install -P dev  --> aplication-dev.properties
+#### - mvn clean install -P test --> aplication-test.properties
+#### - mvn clean install -P prod --> aplication-prod.properties
