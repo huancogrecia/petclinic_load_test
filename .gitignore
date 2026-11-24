@@ -30,3 +30,8 @@ HELP.md
 
 ### Mac ###
 **/.DS_Store
+# Temporary JMeter run outputs
+/jmeter.log
+/resultado_h10
+/jmeter/result/s15/*.log
+/jmeter/result/s15/users-10.csv

@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1795549988900,604,Petición HTTP,200,,Grupo de Hilos 1-1,text,true,,1124,152,1,1,http://<host>/pets,596,0,249
+1795549989883,478,Petición HTTP,200,,Grupo de Hilos 1-2,text,true,,1124,152,1,1,http://<host>/pets,478,0,91
+1795549990884,334,Petición HTTP,200,,Grupo de Hilos 1-3,text,true,,1124,152,1,1,http://<host>/pets,334,0,49
+1795549991884,554,Petición HTTP,200,,Grupo de Hilos 1-4,text,true,,1124,152,1,1,http://<host>/pets,554,0,118
+1795549992879,583,Petición HTTP,200,,Grupo de Hilos 1-5,text,true,,1124,152,1,1,http://<host>/pets,583,0,220
+1795549993882,323,Petición HTTP,200,,Grupo de Hilos 1-6,text,true,,1124,152,1,1,http://<host>/pets,323,0,43
+1795549994886,405,Petición HTTP,200,,Grupo de Hilos 1-7,text,true,,1124,152,1,1,http://<host>/pets,405,0,113
+1795549995883,346,Petición HTTP,200,,Grupo de Hilos 1-8,text,true,,1124,152,1,1,http://<host>/pets,346,0,68
+1795549996881,473,Petición HTTP,200,,Grupo de Hilos 1-9,text,true,,1124,152,1,1,http://<host>/pets,473,0,105
+1795549997883,357,Petición HTTP,200,,Grupo de Hilos 1-10,text,true,,1124,152,1,1,http://<host>/pets,357,0,86
