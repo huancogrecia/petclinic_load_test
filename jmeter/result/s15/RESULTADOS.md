@@ -21,3 +21,13 @@ jmeter -n -t jmeter/PlanS15.jmx -Jhost=<host> -Jusers=10 -l jmeter/result/s15/nu
 ```
 
 Cambia `-Jusers` por `100`, `1000` o `5000` para repetir cada nivel. Usa solo un destino propio o autorizado.
+
+## Plan propuesto: búsqueda de usuario
+
+Se preparó `jmeter/PlanBusquedaUsuarioS15.jmx` con una solicitud de ejemplo `GET /owners?lastName=Leary`, una iteración y validación esperada HTTP 200. Este caso queda como propuesta, no como resultado ejecutado: el código desplegado expone rutas `/pets` y `/pets/{id}`, pero no una ruta para buscar propietarios. No se reporta como prueba exitosa.
+
+## Conclusiones
+
+1. Las ejecuciones de 10, 100 y 1,000 hilos respondieron todas con HTTP 200. La primera ejecución de 5,000 hilos también tuvo 5,000 respuestas HTTP 200.
+2. La repetición de 5,000 hilos registró 4,998 respuestas HTTP 200 y 2 HTTP 500 (0.04 %), con promedio de 626 ms y máximo de 2,797 ms. El nivel de 5,000 usuarios requiere revisión antes de considerarlo estable.
+3. Las pruebas se lanzaron en modo CLI. `top` se ejecutó después de la carga, no durante el pico, por lo que no mide el consumo máximo. La creación de usuarios y la revisión formal de logs quedan como no realizadas, según la guía.
